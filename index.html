@@ -416,6 +416,48 @@
             nav { display: none; }
             h2 { font-size: 2rem; }
         }
+
+        @media (max-width: 768px) {
+    .hero {
+        height: 100vh;
+    }
+
+    .video-container video {
+        object-fit: cover;
+        min-height: 100%;
+        min-width: 100%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        position: absolute;
+    }
+
+    .header-content {
+        padding: 0 20px;
+    }
+
+    .logo-img {
+        max-width: 90%;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        max-width: 80%;
+    }
+
+    .video-container video {
+        object-fit: cover;
+    }
+
+    .btn-orcamento {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -435,16 +477,15 @@
 <header class="hero">
     <div class="video-container">
         <video autoplay muted loop playsinline>
-            <source src="imagens/WhatsApp Video 2025-06-20 at 15.01.16.mp4" type="video/mp4">
+            <source src="https://i.imgur.com/8sVVICo.mp4" type="video/mp4">
         </video>
         <div class="overlay"></div>
     </div>
     <div class="header-content fade-in">
         <img src="https://i.imgur.com/cb0CwT4.png" alt="Logo da Floricultura Cravo e Canela" class="logo-img">
-
-
     </div>
 </header>
+
 
 <main>
     <section id="sobre" class="content-section">
